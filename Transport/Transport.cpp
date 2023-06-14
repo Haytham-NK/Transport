@@ -287,7 +287,7 @@ int main() {
             vector<Wagon*> foundWagons = train.findWagonsByPassengersRange(minPassengers, maxPassengers); // создание списка найденых вагонов
             cout << "Найденные вагоны:" << endl;
             for (const auto& wagon : foundWagons) {
-                wagon->printInfo();
+                cout << wagon->printInfo();
                 cout << endl;
             }
             break;
